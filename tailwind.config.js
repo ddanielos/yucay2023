@@ -7,8 +7,14 @@ module.exports = {
   ],
   theme: {
     extend: {
+      spacing: {
+        '300': '550px'
+      },
       fontFamily: {
-        roboto: ["Roboto Mono", "monospace"],
+        roboto: ["RobotoMono", "sans-serif"],
+      },
+      fontSize: {
+        '21':'21px',
       },
       colors:{
         'prymary-color':'#F4EFE2',
@@ -17,6 +23,7 @@ module.exports = {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+        'hero-image': "url(/assets/background_hero.jpg)",
       },
     },
   },

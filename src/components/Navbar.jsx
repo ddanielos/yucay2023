@@ -1,11 +1,10 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import styles from '../styles/Nav.module.css'
 
 function Navbar() {
   return (
     <nav className="flex justify-center items-center bg-prymary-color">
-      <ul className="flex p-3 font-bold items-center space-x-16 text-gray-850 font-roboto text-xl">
+      <ul className="flex p-3 uppercase font-bold tracking-normal items-center space-x-16 text-gray-850 font-roboto text-xl">
         <div className="flex justify-center" >
           <Link href="/">
             <Image
@@ -17,7 +16,7 @@ function Navbar() {
           </Link>
         </div>
         <Link href="/beers">
-          <li className="hover:text-stone-700 transition-all" >Nuestras Cervezas</li>
+          <li className="hover:shadow-2xl" >Nuestras Cervezas</li>
         </Link>
         <Link href="/about">
           <li className="hover:text-stone-700 transition-all">Sobre el equipo</li>
