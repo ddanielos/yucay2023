@@ -8,6 +8,11 @@ const roboto_mono = Roboto_Mono({
   weight: '700',
   variable: '--font-primaryfont',
 })
+const biorhyme = BioRhyme({
+  subsets: ['latin'],
+  weight: '700',
+  variable: '--font-secondFont',
+})
 
 export const metadata = {
   title: 'Yucay Brewery - Cervecería artesanal en el valle sagrado',
