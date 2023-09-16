@@ -9,6 +9,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      gridTemplateColumns: {
+        'bar': 'repeat(5, auto)',
+      },
       spacing: {
         '300': '450px'
       },
