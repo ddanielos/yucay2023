@@ -3,7 +3,6 @@ import Image from 'next/image'
 const About = () => {
   return(
     <div>
-      {/* <div className="mt-20 mb-12 flex content-center items-center"> */}
       <div className="m-auto mt-20 mb-12 grid grid-cols-3 max-w-[1536px]">
         <Image className='m-auto' src="/assets/flor-naranj.png" alt="flor" width={145} height={144}/>
         <h2 className="mx-10 uppercase text-7xl font-bioRhyme text-third-color text-center tracking-[0.2rem] text-shadow-n shadow-[#36360c]">
@@ -29,7 +28,7 @@ const About = () => {
           </section>
         </div>
       </div>
-      <div className="flex flex-row content-evenly mt-[-350px]">
+      <div className="flex flex-row content-evenly mt-[-350px] mb-[350px]">
         <Image className="m-auto" src="/assets/logo-alt.png" alt="logo alt" width={162} height={178}/>
       </div>
     </div>
