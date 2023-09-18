@@ -26,6 +26,7 @@ module.exports = {
         'primary-color':'#F4EFE2',
         'second-color':'#c66a48',
         'third-color':'#4c4b10',
+        'fourth-color':'#d44620',
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
@@ -35,7 +36,7 @@ module.exports = {
       },
       textShadow: {
         sm: '0 1px 2px var(--tw-shadow-color)',
-        DEFAULT: '0 2px 4px var(--tw-shadow-color)',
+        n: '0 2px 4px var(--tw-shadow-color)',
         lg: '0 8px 16px var(--tw-shadow-color)',
       },
     },

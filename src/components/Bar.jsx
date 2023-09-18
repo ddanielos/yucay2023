@@ -44,7 +44,7 @@ const Bar = () => {
         <div className="col-start-3 col-span-1">
           <Image className="block m-auto" src="/assets/eslogan.svg" alt="estar vivo" width={250} height={250}/>
         </div>
-        <div className="col-start-2 col-span-3 uppercase font-bioRhyme font-extrabold text-6xl text-third-color text-center tracking-[0.2rem] text-shadow-sm shadow-[#36360c]">
+        <div className="col-start-2 col-span-3 uppercase font-bioRhyme font-extrabold text-6xl text-third-color text-center tracking-[0.2rem] text-shadow-n shadow-[#36360c]">
           <h2>#yucaybrewery</h2>
         </div>
         <div className="col-start-3 col-span-1">
