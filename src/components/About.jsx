@@ -5,7 +5,7 @@ const About = () => {
     <div>
       <div className="m-auto mt-20 mb-12 grid grid-cols-3 max-w-[1536px]">
         <Image className='m-auto' src="/assets/flor-naranj.png" alt="flor" width={145} height={144}/>
-        <h2 className="mx-10 uppercase text-7xl font-bioRhyme text-third-color text-center tracking-[0.2rem] text-shadow-n shadow-[#36360c]">
+        <h2 className="mx-10 uppercase text-6xl font-bioRhyme text-third-color text-center tracking-[0.2rem] text-shadow-n shadow-[#36360c]">
           Quienes Somos
         </h2>
         <Image className='m-auto' src="/assets/flor-naranj.png" alt="flor" width={145} height={144}/>
