@@ -4,3 +4,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  --color_principal: #f4efe2;
+  --color_secundario: #c66a48;
+  --color_terciario: rgb(76, 75, 16);
+  --color_terciario_hover: #36360c;
+  --color_cuaternario: #d44620;
+  --color_blanco: white;
+  --fuente1: 'RobotoMono', sans-serif;
+  --fuente2: 'BioRhyme', sans-serif;
+  --size_menu_1920: 21px;
+  --size_menu_1360: 17px;
+  --size_menu_1024: 14px;
+  --const1: (100vw / 2);
+  --menu_width: calc(100vw/2 - 49px);
+  --logo_width: 141px;
+  --logo_width_s: 95px;
+}

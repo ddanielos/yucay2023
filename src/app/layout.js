@@ -1,18 +1,6 @@
 import './globals.css'
-import { Roboto_Mono, BioRhyme } from 'next/font/google'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
-
-const roboto_mono = Roboto_Mono({
-  subsets: ['latin'],
-  weight: '700',
-  variable: '--font-primaryfont',
-})
-const biorhyme = BioRhyme({
-  subsets: ['latin'],
-  weight: '700',
-  variable: '--font-secondFont',
-})
 
 export const metadata = {
   title: 'Yucay Brewery - Cervecería artesanal en el valle sagrado',
@@ -22,10 +10,12 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>
-        <Navbar />
-        {children}
-        <Footer/>
+      <body className=' bg-primary-color'>
+        <div className=' max-w-[1536px] m-auto'>
+          <Navbar />
+          {children}
+          <Footer/>
+        </div>
       </body>
     </html>
   )
