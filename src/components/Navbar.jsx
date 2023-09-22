@@ -27,7 +27,7 @@ function Navbar() {
         <Link href="/contacto">
           <li className="hover:text-shadow-sm shadow-gray-400 transition-all">Contacto</li>
         </Link>
-          <li className="hover:text-shadow-sm shadow-gray-400 transition-all">Login</li>
+          <li className=" pointer-events-none cursor-default text-gray-400">Login</li>
       </ul>
     </nav>
   )
