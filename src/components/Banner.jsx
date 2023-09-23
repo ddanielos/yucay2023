@@ -17,9 +17,9 @@ const Banner = () => {
                      <p className="tracking-[1.7pt] text-sm my-4 font-bold">{`ch'alla!`}</p>
                      {/* <button className={styles.todas}>Todas las cervezas</button> */}
                      <Link href="/beers">
-                        <p className="uppercase font-bold text-xl border-4 p-3 border-primary-color">Todas las cervezas</p>
+                        <p className="uppercase font-bold text-2xl border-4 p-3 border-primary-color">Todas las cervezas</p>
                      </Link>
-                     <p className="tracking-[1.7pt] text-sm my-4 font-bold">Apoya negocios locales</p>
+                     <p className="tracking-[1.7pt] text-lg my-4 font-bold">Apoya negocios locales</p>
                   </div>
                </div>
                <div className="flex flex-col items-center">
