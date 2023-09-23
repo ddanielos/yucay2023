@@ -11,7 +11,7 @@ const Modal = (props) => {
         <div className=" bg-primary-color p-2 w-[95vw] h-[95vh] max-w-[1000px] max-h-[700px] flex flex-row items-center content-around m-auto" onClick={handleModalDialogClick}>
           {
             props.typeInsta === "VIDEO"?
-              <video className="ml-[-40px] h-[80vh] max-h-[600px] max-w-[600px] object-cover border-black border-4 border-solid " controls autoPlay={true}><source src={props.imageInstaURL} type="video/mp4"/></video>
+              <video className="ml-[40px] h-[80vh] max-h-[600px] max-w-[600px] object-cover border-black border-4 border-solid " controls autoPlay={true}><source src={props.imageInstaURL} type="video/mp4"/></video>
             :
               <img className="ml-[40px] h-[80vh] max-h-[600px] max-w-[600px] object-cover border-black border-4 border-solid" src={props.imageInstaURL} alt=""/>
           }
