@@ -11,7 +11,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className=' bg-primary-color'>
-        <div className=' max-w-[1536px] m-auto'>
+        <div className='md:max-w-[1536px] m-auto'>
           <Navbar />
           {children}
           <Footer/>
