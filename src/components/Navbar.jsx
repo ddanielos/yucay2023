@@ -11,7 +11,7 @@ const Navbar = () => {
   }
 
   return (
-    <nav className="flex flex-wrap justify-between md:justify-center items-center  md:bg-primary-color">
+    <nav className="flex flex-wrap justify-between md:justify-center items-center  bg-primary-color">
       <div className="">
         <Link onClick={() => setIsOpen(false)}  href="/">
           <Image className='my-[10px] mx-[20px] lg:mx-7 2xl:mx-10'

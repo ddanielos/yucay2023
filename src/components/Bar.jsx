@@ -18,7 +18,7 @@ const Bar = () => {
   }
   return(
     <div className="max-w-screen-2xl m-auto">
-      <div className="bg-primary-color flex justify-center">
+      <div className="bg-primary-color hidden md:flex justify-center">
         <div className="table-cell text-center py-10">
           <p className="uppercase text-primary-color bg-third-color text-center inline-block font-bioRhyme font-bold text-3xl tracking-[0.2rem] py-8 w-full">
             Delivery
@@ -37,21 +37,21 @@ const Bar = () => {
           </p>
         </div>
       </div>
-      <div className="bg-primary-color grid grid-cols-bar auto-rows-auto">
+      <div className="bg-primary-color flex flex-col md:grid md:grid-cols-bar md:auto-rows-auto mt-10 md:mt-0">
         <div className="col-start-1 col-span-1 row-start-1 row-span-3 m-auto">
-          <Image className="" src="/assets/mascara.png" alt="mascara" width={500} height={500}/>
+          <Image className="hidden md:block" src="/assets/mascara.png" alt="mascara" width={500} height={500}/>
         </div>
         <div className="col-start-3 col-span-1">
-          <Image className="block m-auto" src="/assets/eslogan.svg" alt="estar vivo" width={250} height={250}/>
+          <Image className="hidden md:block md:m-auto" src="/assets/eslogan.svg" alt="estar vivo" width={250} height={250}/>
         </div>
-        <div className="col-start-2 col-span-3 uppercase font-bioRhyme font-extrabold text-6xl text-third-color text-center tracking-[0.2rem] text-shadow-n shadow-[#36360c]">
+        <div className="col-start-2 col-span-3 uppercase font-bioRhyme font-extrabold text-2xl md:text-6xl text-third-color text-center tracking-[0.2rem] text-shadow-n shadow-[#36360c]">
           <h2>#yucaybrewery</h2>
         </div>
         <div className="col-start-3 col-span-1">
-          <Image className="block m-auto" src="/assets/eslogan.svg" alt="estar vivo" width={250} height={250}/>
+          <Image className="hidden md:block md:m-auto" src="/assets/eslogan.svg" alt="estar vivo" width={250} height={250}/>
         </div>
         <div className="col-start-5 col-span-1 row-start-1 row-span-3 m-auto">
-          <Image className="scale-x-[-1]" src="/assets/mascara.png" alt="mascara" width={500} height={500}/>
+          <Image className=" w-72 md:w-auto md:scale-x-[-1]" src="/assets/mascara.png" alt="mascara" width={500} height={500}/>
         </div>
       </div>
     </div>

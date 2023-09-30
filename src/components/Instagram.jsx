@@ -63,7 +63,12 @@ const Instagram = (props) => {
   if(data){
     const instaPosts = slimUpPosts(data)
     let images = [];
-    for (let i=0; i<10; i++){
+    let numImages = 10
+    if (screen.width < 1023){
+      numImages = 6
+    }
+
+    for (let i=0; i< numImages ; i++){
       images.push(instaPosts[i])
     }
     return(
@@ -71,7 +76,7 @@ const Instagram = (props) => {
         <div className="flex flex-row flex-wrap m-auto content-center pt-12 w-full">
           {images.map(({ thumbnail, caption, media_url, type, permalink}, index) => {
             return(
-                <div className="m-1 bg-black p-1 w-[286px] h-[286px] flex flex-col transition-all hover:translate-y-[-3px] hover:shadow-[0px_10px_15px_-5px_rgb(76,75,16)] " key={index}>
+                <div className="m-1 bg-black p-1 w-[180px] h-[180px] md:w-[286px] md:h-[286px] flex flex-col transition-all hover:translate-y-[-3px] hover:shadow-[0px_10px_15px_-5px_rgb(76,75,16)] " key={index}>
                   <img className="max-h-full object-cover object-center" key={index} src={thumbnail} onClick={(e)=> openModal(caption, media_url, type, permalink, e)} alt="instagram"/>
                   {/*<Image key={index} src={thumbnail} onClick={(e)=> openModal(caption, media_url, type, permalink, e)} alt="instagram" width={300} height={300}/>*/}
                   {type==="VIDEO"&&<Image className=" ml-2 mt-[-35px] p-0 float-left" src="/assets/playIcon.png" alt="play" width={31} height={31}/>}
