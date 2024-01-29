@@ -1,21 +1,16 @@
 import useFetchBlogs from '@/hooks/useFetchBlogs';
-//import BlogItem from './BlogItem';
 import Image from 'next/image';
 import Carousel from './Carousel';
 
-/*import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Pagination } from 'swiper/modules'
-
-import 'swiper/css'
-import 'swiper/css/navigation'
-import 'swiper/css/pagination'
-*/
-
-
 export default async function OurBlog(){
   const blogs = await useFetchBlogs()
+  /*
   if(!blogs){
     <h2>Loading...</h2>
+  }
+  */
+  if(blogs===null){
+    return <h2>Loading...</h2>
   }
   //const data = blogs.data.reverse();
   const data = blogs ? blogs.data.reverse() : [];

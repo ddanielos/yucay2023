@@ -79,7 +79,7 @@ const Instagram = (props) => {
                 <div className="m-1 bg-black p-1 w-[45vw] h-[180px] md:w-[286px] md:h-[286px] flex flex-col transition-all hover:translate-y-[-3px] hover:shadow-[0px_10px_15px_-5px_rgb(76,75,16)] " key={index}>
                   <img className="max-h-full object-cover object-center" key={index} src={thumbnail} onClick={(e)=> openModal(caption, media_url, type, permalink, e)} alt="instagram"/>
                   {/*<Image key={index} src={thumbnail} onClick={(e)=> openModal(caption, media_url, type, permalink, e)} alt="instagram" width={300} height={300}/>*/}
-                  {type==="VIDEO"&&<Image className=" ml-2 mt-[-35px] p-0 float-left" src="/assets/playIcon.png" alt="play" width={31} height={31}/>}
+                  {type==="VIDEO"&&<Image className=" ml-2 mt-[-35px] p-0 float-left" src="/assets/playIcon.png" alt="play" width={31} height={33} style={{ width: "31px", height: "auto" }}/>}
                 </div>
             )
           })}

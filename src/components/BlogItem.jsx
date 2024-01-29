@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import { parseISO, format } from 'date-fns'
 
-const URL = process.env.API_URL_COVER;
+const URL = process.env.NEXT_PUBLIC_REACT_APP_API_URL_COVER;
 
 export default function BlogItem(props){
   const { title, content, cover, description, publishedAt, Slug } = props.attributes;
@@ -16,7 +16,8 @@ export default function BlogItem(props){
                 {title}
             </h3>
             <p className=" font-roboto text-[0.9rem]" dangerouslySetInnerHTML={{__html: description}}></p>
-            <div className="pt-[15px] ml-auto self-end font-roboto text-[0.8rem] text-second-color">Publicado: {format(parseISO(publishedAt), 'dd-MM-yyyy')}</div>
+            {/*<div className="pt-[15px] ml-auto self-end font-roboto text-[0.8rem] text-second-color">Publicado: {format(parseISO(publishedAt), 'dd-MM-yyyy')}</div>
+            */}
           </div>
         </div>
       </Link>
