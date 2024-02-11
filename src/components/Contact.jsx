@@ -27,9 +27,9 @@ export default function Contact(){
 
   return(
     <div className="m-0 p-[30px]">
-      <form className="m-auto w-[35%] p-0" onSubmit={handleSubmit}>
+      <form className="m-auto md:w-[35%] p-0" onSubmit={handleSubmit}>
         <section>
-          <input className="mb-[15px] pl-[7px] h-[45px] w-full border-[1px] border-solid border-[#ccc] rounded-[4px] text-[22.5px] font-roboto text-black resize-y"
+          <input className="mb-[15px] pl-[7px] h-[45px] w-full border-[1px] border-solid border-[#ccc] rounded-[4px] text-[1.1rem] md:text-[22.5px] font-roboto text-black resize-y"
             type="text"
             name='user_name'
             value={name}
@@ -38,7 +38,7 @@ export default function Contact(){
           />
         </section>
         <section>
-          <input className="mb-[15px] pl-[7px] h-[45px] w-full border-[1px] border-solid border-[#ccc] rounded-[4px] text-[22.5px] font-roboto text-black resize-y"
+          <input className="mb-[15px] pl-[7px] h-[45px] w-full border-[1px] border-solid border-[#ccc] rounded-[4px] text-[1.1rem] md:text-[22.5px] font-roboto text-black resize-y"
             type="email"
             name='user_email'
             value={email}
@@ -47,7 +47,7 @@ export default function Contact(){
           />
         </section>
         <section>
-          <textarea className="mb-[15px] pl-[7px] h-[250px] w-full border-[1px] border-solid border-[#ccc] rounded-[4px] text-[22.5px] font-roboto text-black resize-y"
+          <textarea className="mb-[15px] pl-[7px] h-[250px] w-full border-[1px] border-solid border-[#ccc] rounded-[4px] text-[1.1rem] md:text-[22.5px] font-roboto text-black resize-y"
             id="message"
             name='user_message'
             value={message}

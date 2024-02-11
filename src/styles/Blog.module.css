@@ -1,15 +1,32 @@
 
 .contentContainer img{
+  display: block;
   margin: auto;
-  max-width: 500px;
+  max-width: 90%;
+  height: auto;
   border-radius: 10px;
   box-shadow: 2px 2px 5px 0px var(--color_secundario);
 }
+
+@media (min-width: 768px) {
+  .contentContainer img {
+    margin: auto;
+    max-width: 500px;
+  }
+}
 .contentContainer p{
+  display: block;
+  margin: auto;
+  max-width: 90%;
+  font-family: var(--fuente1);
   padding-top: 20px;
   padding-bottom: 20px;
   text-align: justify;
-  font-size: 1.1rem;
-  line-height: 1.5;
-  font-family: var(--fuente1);
+  font-size: 1rem;
+}
+@media (min-width: 768px) {
+  .contentContainer p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+  }
 }
