@@ -1,13 +1,33 @@
+'use client'
 import Image from 'next/image'
+import { useEffect } from 'react'
+import CloseButton from './CloseButton'
 
 const Modal = (props) => {
+  const { closeModal } = props;
+
   const handleModalDialogClick = (e) => {
     e.stopPropagation();
   }
+  useEffect(() => {
+    const blockNavigation = () => {
+      history.pushState(null, null, location.href);
+      window.onpopstate = function () {
+        history.go(1);
+      };
+    };
+
+    blockNavigation();
+
+    return () => {
+      window.onpopstate = null;
+    };
+  },[])
 
   return (
     <>
       <div className=" w-[100vw] h-[100vh] bg-[rgba(0,0,0,0.85)] fixed top-0 left-0 z-100 grid content-center items-center" onClick={props.closeModal}>
+      <CloseButton closeModal={closeModal}/>
         <div className="bg-primary-color p-2 w-[95vw] h-[65vh] md:h-[95vh] max-w-[96%] max-h-[96%] md:max-w-[1000px] md:max-h-[700px] md:flex md:flex-row items-center md:content-around m-auto" onClick={handleModalDialogClick}>
           {
             props.typeInsta === "VIDEO"?
