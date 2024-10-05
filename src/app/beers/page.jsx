@@ -1,5 +1,5 @@
 import { Suspense } from "react";
-import useFetchBeers from "@/hooks/useFetchBeers"
+import {useFetchBeers} from "@/hooks/useFetchBeers"
 import BeerItem from "@/components/BeerItem"
 import Loading from "./loading"
 
@@ -15,8 +15,8 @@ export default async function BeersPage() {
       </h1>
       <Suspense fallback={<Loading />}>
         {
-          beers.data.length > 0 &&
-          beers.data.map( item => {
+          beers.length > 0 &&
+          beers.map( item => {
             count = count +1
             return (
               <BeerItem key={item.id} {...item} count={count} />
