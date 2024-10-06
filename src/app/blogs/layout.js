@@ -1,6 +1,6 @@
 import Image from 'next/image'
 
-export default function BlogsLayout({ children }) {
+export default function BlogssLayout({ children }) {
   return (
     <div>
       <section className=""></section>
