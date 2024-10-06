@@ -8,7 +8,6 @@ export default async function BlogsPage() {
   const blogs = await useFetchBlogs();
 
   if (blogs) {
-    // Como Contentful no garantiza un orden particular, revertimos el array si es necesario
     const reverseBlogs = blogs.reverse();
 
     return (
@@ -17,7 +16,6 @@ export default async function BlogsPage() {
           {reverseBlogs.length > 0 &&
             reverseBlogs.map((item) => {
               return (
-                // Cada item ya tiene la estructura correcta de Contentful con 'fields'
                 <BlogItem key={item.sys.id} fields={item.fields} />
               );
             })}

@@ -26,14 +26,14 @@ const Bypass = ({ data }) => {
 
   const renderBlogItemsMobile = () => {
     return data.slice(0, 3).map(item => (
-      <SwiperSlide key={item.id} className="flex justify-center items-center w-3/5">
+      <SwiperSlide key={item.sys.id} className="flex justify-center items-center w-3/5">
         <BlogItem {...item} />
       </SwiperSlide>
     ));
   };
   const renderBlogItemsDesktop = () => {
     return data.slice(0, 3).map(item => (
-        <BlogItem key={item.id} {...item} />
+        <BlogItem key={item.sys.id} {...item} />
     ));
   };
 
