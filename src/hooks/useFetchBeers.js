@@ -1,11 +1,11 @@
-import {beerDataParser} from "@/utils/beerDataParser";
+import { beerDataParser } from "@/utils/beerDataParser";
 
-const API_CONTENTFUL = process.env.API_CONTENTFUL;
-const CONTENTFUL_SPACE_ID = process.env.CONTENTFUL_SPACE_ID;
-const CONTENTFUL_ENVIRONMENT_ID = process.env.CONTENTFUL_ENVIRONMENT_ID;
-const CONTENTFUL_ACCESS_TOKEN = process.env.CONTENTFUL_ACCESS_TOKEN;
+const API_CONTENTFUL = process.env.NEXT_PUBLIC_API_CONTENTFUL;
+const CONTENTFUL_SPACE_ID = process.env.NEXT_PUBLIC_CONTENTFUL_SPACE_ID;
+const CONTENTFUL_ENVIRONMENT_ID = process.env.NEXT_PUBLIC_CONTENTFUL_ENVIRONMENT_ID;
+const CONTENTFUL_ACCESS_TOKEN = process.env.NEXT_PUBLIC_CONTENTFUL_ACCESS_TOKEN;
 
-const API_URL = `${API_CONTENTFUL}${CONTENTFUL_SPACE_ID}/environments/${CONTENTFUL_ENVIRONMENT_ID}/entries?access_token=${CONTENTFUL_ACCESS_TOKEN}`
+const API_URL = `${API_CONTENTFUL}${CONTENTFUL_SPACE_ID}/environments/${CONTENTFUL_ENVIRONMENT_ID}/entries?access_token=${CONTENTFUL_ACCESS_TOKEN}&content_type=beer`
 
 if (!API_URL){
   throw new Error('API_BEERS environment variable is not set')

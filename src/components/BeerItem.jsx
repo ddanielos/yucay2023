@@ -5,6 +5,7 @@ export default async function BeerItem(props){
   const { count } = props;
   const { name, cover_id, description, detail, pair, abv, bitterness } = props.attributes;
   const cover = await useFetchCoverUrl(cover_id)
+
   return (
     <div className="flex justify-center py-[4vw] px-0">
       <div key={count} className={count%2 === 0 ? "w-11/12 md:flex justify-around max-w-[1020px] border-[1px] border-second-color rounded-xl" : "w-11/12 md:flex justify-around max-w-[1020px] flex-row-reverse border-[1px] border-second-color rounded-xl" }>
