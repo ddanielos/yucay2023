@@ -5,7 +5,7 @@ export async function GET() {
   const url = `https://graph.instagram.com/me/media?access_token=${TOKEN_IG}&fields=id,caption,media_type,media_url,permalink,thumbnail_url,timestamp,username`;
 
   try {
-    const response = await fetch(url);
+    const response = await fetch(url, { next: { revalidate: 60 }});
     const data = await response.json();
 
     if (!response.ok) {
