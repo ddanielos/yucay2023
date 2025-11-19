@@ -18,7 +18,7 @@ const Banner = () => {
                      <Link href="/beers">
                         <p className=" bg-[rgb(165,90,62,1)] md:bg-second-color uppercase font-bold text-xl md:text-2xl border-2 md:border-4 p-3 border-primary-color">Todas las cervezas</p>
                      </Link>
-                     <p className="tracking-[1.7pt] text-sm md:text-lg my-4 font-bold">Apoya negocios locales</p>
+                     <p className="tracking-[1.7pt] text-sm md:text-lg my-4 font-bold"></p>
                   </div>
                </div>
                <div className="hidden md:flex md:flex-col items-center">

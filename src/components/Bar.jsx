@@ -51,7 +51,7 @@ const Bar = () => {
           <Image className="hidden md:block md:m-auto" src="/assets/eslogan.svg" alt="estar vivo" width={250} height={250}/>
         </div>
         <div className="col-start-5 col-span-1 row-start-1 row-span-3 m-auto">
-          <Image className=" w-72 md:w-auto md:scale-x-[-1]" src="/assets/mascara.png" alt="mascara" width={500} height={500}/>
+          <Image className="md:block md:scale-x-[-1]" src="/assets/mascara.png" alt="mascara" width={500} height={500}/>
         </div>
       </div>
     </div>

@@ -19,8 +19,8 @@ function Footer() {
       <div className="hidden md:flex flex-row w-auto h-80 xl:h-96">
         <div className="bg-[#e06e46] w-1/2 p-6 xl:p-10">
           <h2 className="uppercase font-bioRhyme tracking-[0.1rem] text-5xl xl:text-7xl my-4">Visitanos</h2>
-          <p className="text-l xl:text-xl leading-9 tracking-widest font-roboto">Miércoles - Sábado: 13:00 - 22:00</p>
-          <p className="text-l xl:text-xl leading-9 tracking-widest font-roboto">Domingo: 11:00 - 22:00</p>
+          <p className="text-l xl:text-xl leading-9 tracking-widest font-roboto">Martes - Sábado: 13:00 - 21:00</p>
+          <p className="text-l xl:text-xl leading-9 tracking-widest font-roboto">Domingo: 11:00 - 20:00</p>
         </div>
         <div className="bg-[#d44620] w-1/2 p-6 xl:p-10">
           <p className="text-l xl:text-xl leading-9 tracking-widest font-roboto">Envíos y devoluciones</p>

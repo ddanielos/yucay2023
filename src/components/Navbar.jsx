@@ -15,7 +15,7 @@ const Navbar = () => {
       <div className="">
         <Link onClick={() => setIsOpen(false)}  href="/">
           <Image className='my-[10px] mx-[20px] lg:mx-7 2xl:mx-10'
-            src="/assets/Logo-Principal-en-negro_155x155.png"
+            src="/assets/logo_negro.png"
             width={130}
             height={130}
             alt="Picture of the author"
